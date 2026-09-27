@@ -22,7 +22,7 @@ services:
       dockerfile: Dockerfile
     image: vw_financeiro_obra:latest
     container_name: vw_financeiro_obra_scheduler
-    command: python scheduler.py        # seu loop de refresh em 2 h
+    command: python scheduler.py       
     depends_on:
       - app
     volumes:
