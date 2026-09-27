@@ -52,7 +52,6 @@ app.server.secret_key = FLASK_SECRET
 server = app.server                       
 
 # ─────────────────────────────────────────────────────────────
-# app.py, após criar `app = Dash(__name__, ...)`
 app.index_string = """
 <!DOCTYPE html>
 <html>
