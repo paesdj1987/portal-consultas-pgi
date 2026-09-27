@@ -2,11 +2,11 @@
 
 import dash_bootstrap_components as dbc
 from dash import html, dcc
-from flask import session  # Para obter o usuário logado
+from flask import session  
 
 def create_home_layout(authorized: bool = False):
 
-    # 1. Cabeçalho (logo + título)
+    # 1. Cabeçalho
     header_group = html.Div(
         [
             html.Img(
@@ -133,7 +133,6 @@ def create_home_layout(authorized: bool = False):
                 "marginTop": "10px",
                 "opacity": "0",
                 "animation": "fadeIn 1.2s ease-in-out 0.6s forwards",
-                # Espaçamento maior abaixo da mensagem
                 "marginBottom": "15px",
             },
             className="welcome-message",
@@ -172,7 +171,6 @@ def create_home_layout(authorized: bool = False):
                 "alignItems": "center",
                 "flexWrap": "wrap",
                 "opacity": "0",
-                # Aumenta a distância para a mensagem acima
                 "marginTop": "20px",
                 "animation": "fadeIn 1.2s ease-in-out 0.8s forwards",
             },
